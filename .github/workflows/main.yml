@@ -9,7 +9,7 @@ on:
         required: true
         type: choice
         options:
-          - 18
+          - 22
 
 jobs:
   lint:
