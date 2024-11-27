@@ -22,3 +22,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ inputs.nodejs-version }}
+      - name: Install dependencies
+        run: npm ci
+      - name: Run lint
+        run: npm lint
+      - name: Run tests
+        run: npm test
