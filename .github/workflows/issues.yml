@@ -1,0 +1,12 @@
+name: Issues
+on:
+  issues:
+    types: [opened, edited, milestoned]
+
+jobs:
+  lint:
+    name: Output context
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output context
+        run: echo ${{ github }}
